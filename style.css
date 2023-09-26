@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+
+.container {
+  text-align: center;
+background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: white; /* Adding a text color for better readability */
+}
+
+
+
+h1 {
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+  color: #333;
+}
+
+input {
+  width: 60%;
+  padding: 15px; /* Increased padding for a more spacious look */
+  margin: 10px;
+  border: none; /* Removed the border to customize using box-shadow */
+  border-radius: 10px;
+  color: #333;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+input:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(92, 184, 92, 0.5); /* Change box shadow on focus */
+}
+   @media (max-width: 768px) {
+      /* Adjust styles for tablets and smaller screens */
+      .container {
+        max-width: 90%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      /* Adjust styles for mobile devices */
+      .container {
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
